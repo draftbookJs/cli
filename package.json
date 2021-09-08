@@ -1,0 +1,49 @@
+{
+  "name": "@draftbook/cli",
+  "version": "1.0.0",
+  "description": "Draftbook cli,For quickly creating a customized sdk",
+  "main": "index.js",
+  "bin": {
+    "draftbook": "bin/draftbook.js"
+  },
+  "scripts": {
+    "prepatch": "npm version prerelease --preid=alpha && npm publish --tag alpha",
+    "patch": "npm run test && npm version patch && npm publish",
+    "test": "jest",
+    "eslint": "eslint",
+    "prepare": "husky install && npx husky add .husky/pre-commit \"npx lint-staged\""
+  },
+  "lint-staged": {
+    "(lib|bin|constants|test)/**/*.*": [
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draftbookTools/cli.git"
+  },
+  "author": "qqqqqcy",
+  "dependencies": {
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.2",
+    "commander": "^7.2.0",
+    "gogocode": "^1.0.16",
+    "inquirer": "^8.1.1",
+    "update-notifier": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^6.0.0",
+    "jest": "^27.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/draftbookTools/cli/issues"
+  },
+  "homepage": "https://github.com/draftbookTools/cli#readme"
+}

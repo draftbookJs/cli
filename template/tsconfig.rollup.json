@@ -1,0 +1,16 @@
+/**
+ * tsconfig.json 用于编辑器、jest 等正确识别类型
+ * 使用 rollup 的时候，需要 exclude test，并且保证入口为 src
+ **/
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        /* 使用 rollup 打包的时候，不需要 tsc 处理 ECMAScript target，babel 会处理 */
+        "target": "esnext",
+        "outDir": "./dist/es",
+        "rootDir": "./src",
+    },
+    "exclude": [
+        "test"
+    ]
+}

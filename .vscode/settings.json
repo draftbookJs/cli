@@ -1,0 +1,10 @@
+{
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "editor.codeActionsOnSave": {
+        // "source.fixAll": true
+    }
+}
