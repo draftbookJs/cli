@@ -1,15 +1,13 @@
-# @draftbook/Cli - SDK 脚手架
+# @draftbook/cli - SDK 脚手架
 Command Line Interface for SDK
 
 ## Installation
----
 
 ```javascript
 $ npm install -g @draftbook/cli
 ```
 
 ## Usage
----
 
 在当前目录下创建一个基于 rollup 配置的项目。代码中预置了常用基础配置和最佳实践，适用于 sdk 开发
 
@@ -18,7 +16,6 @@ draftbook add
 ```
 
 ## Command
----
 
 目前仅提供新建 sdk 命令
 
@@ -35,7 +32,6 @@ Commands:
 ```
 
 ## Detail
----
 
 创建新 SDK 时，选项说明
 
@@ -88,7 +84,6 @@ sdk 名称，采用小写字母 + `'-'` 的形式
 是否需要配置 Husky，用于 git commit 前的代码校验
 
 ## Script
----
 
 新生成的代码预置了如下 script。规范流程的同时提高开发效率
 
