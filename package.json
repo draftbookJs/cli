@@ -1,6 +1,6 @@
 {
   "name": "@draftbook/cli",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1",
   "description": "Draftbook cli,For quickly creating a customized sdk",
   "main": "index.js",
   "bin": {
@@ -8,10 +8,11 @@
   },
   "scripts": {
     "prepatch": "npm version prerelease --preid=alpha && npm publish --tag alpha",
-    "patch": "npm run test && npm version patch && npm publish",
+    "patch": "npm run test && npm version patch && npm publish --ignore-scripts",
     "test": "jest",
     "eslint": "eslint",
-    "prepare": "husky install && npx husky add .husky/pre-commit \"npx lint-staged\""
+    "prepare": "husky install && npx husky add .husky/pre-commit \"npm run pre-commit\"",
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "(lib|bin|constants|test)/**/*.*": [
@@ -36,7 +37,8 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-jest": "^24.4.0",
     "husky": "^6.0.0",
-    "jest": "^27.1.0"
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2"
   },
   "engines": {
     "node": ">=10.0.0"
