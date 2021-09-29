@@ -1,4 +1,7 @@
 # @draftbook/cli - SDK 脚手架
+
+![license](https://img.shields.io/npm/l/@draftbook/cli?style=for-the-badge)
+
 Command Line Interface for SDK
 
 ## Installation
