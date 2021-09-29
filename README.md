@@ -141,4 +141,4 @@ npm install [package name]
 
 ## Author
 
-> qqqqqcy@gmmail.com
+> qqqqqcy@gmail.com
