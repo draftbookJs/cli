@@ -46,7 +46,7 @@ sdk 名称，采用小写字母 + `'-'` 的形式
 - custom
 
 选择预设模板
-- fast-start：常用的 sdk 初始化配置，使用 @babel/runtime 处理 api，引入 eslint、husky。可以自行选择使用使用 typescript
+- fast-start：常用的 sdk 初始化配置，使用 @babel/runtime 处理 api，引入 eslint、husky。可以自行选择是否使用 typescript
 - custom：自定义后续规则
 
 ### 3. How to convert API to backward-compatible versions with Babel
